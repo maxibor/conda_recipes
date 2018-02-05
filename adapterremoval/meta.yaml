@@ -1,0 +1,27 @@
+package:
+  name: adapterremoval2
+  version: "2.2.2"
+
+source:
+  git_rev: "v2.2.2"
+  git_url: https://github.com/MikkelSchubert/adapterremoval.git
+
+requirements:
+  build:
+    - gcc  # [linux]
+    - zlib
+    - bzip2   # [linux]
+
+
+  run:
+    - zlib
+    - libgcc  # [linux]
+
+
+test:
+  commands:
+    - AdapterRemoval -h
+
+about:
+  home: https://github.com/MikkelSchubert/adapterremoval
+  license: GNU GENERAL PUBLIC LICENSE
