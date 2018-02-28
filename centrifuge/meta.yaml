@@ -1,0 +1,30 @@
+package:
+  name: centrifuge
+  version: "1.0.3"
+
+source:
+  git_rev: v1.0.3
+  git_url: https://github.com/infphilo/centrifuge.git
+
+requirements:
+  build:
+    - gcc   # [not osx]
+    - llvm  # [osx]
+    - zlib 
+    - perl
+    - python
+ 
+  run:
+    - libgcc  # [not osx]
+    - zlib 
+    - perl
+    - python
+
+test:
+  commands:
+    - centrifuge --help
+
+about:
+  home: https://github.com/infphilo/centrifuge
+  license: GPL3
+  summary: 'Classifier for metagenomic sequences.'

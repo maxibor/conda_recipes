@@ -1,4 +1,6 @@
 # Build recipes for conda packages
 
-- [AdapterRemoval](https://github.com/MikkelSchubert/adapterremoval)
+### The following conda packages are available on [Anaconda Cloud](https://anaconda.org/maxibor/repo)
 
+- [AdapterRemoval](https://github.com/MikkelSchubert/adapterremoval) : ` conda install -c maxibor adapterremoval2 `
+- [Centrifuge](https://github.com/infphilo/centrifuge) (forked from [bioconda](https://github.com/bioconda/bioconda-recipes/tree/master/recipes/centrifuge)) : `conda install -c maxibor centrifuge`
