@@ -1,0 +1,23 @@
+package:
+  name: falcon
+  version: "2.2"
+
+source:
+  git_rev: v2.2
+  git_url: https://github.com/maxibor/falcon.git
+
+requirements:
+  build:
+    - gxx_linux-64
+    - cmake
+    
+test:
+  commands:
+    - FALCON -h
+    - FALCON-FILTER -h
+    - FALCON-EYE -h
+
+about:
+  home: https://github.com/pratas/falcon
+  license: GPL3
+  summary: ' compression-based method to infer metagenomic sample composition'
