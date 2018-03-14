@@ -1,0 +1,31 @@
+package:
+  name: tsne
+  version: "0.1.8"
+
+source:
+  git_rev: v0.1.8
+  git_url: https://github.com/maxibor/tsne.git
+
+requirements:
+  build:
+    - python 2.7.*
+    - numpy >=1.7.1
+    - scipy >=0.12.0
+    - cython >=0.19.1
+    - atlas
+    - openblas
+  run:
+    - python 2.7.*
+    - numpy >=1.7.1
+    - scipy >=0.12.0
+    - cython >=0.19.1
+    - atlas
+    - openblas
+
+test:
+  commands:
+      python -c "from tsne import bh_sne"
+
+about:
+  home: https://github.com/danielfrg/tsne
+  summary: 'Python library containing T-SNE algorithms'
